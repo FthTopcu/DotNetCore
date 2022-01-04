@@ -13,6 +13,5 @@ namespace WebApi.Common
                         CreateMap<Book, BookDetailViewModel>().ForMember(destination => destination.Genre, opt => opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString()));
                         CreateMap<Book, BooksViewModel>().ForMember(destination => destination.Genre, opt => opt.MapFrom(src => ((GenreEnum)src.GenreId).ToString()));
                 }
-
         }
 }

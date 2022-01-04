@@ -35,3 +35,4 @@ C:\Users\90531\Desktop\DotNetCore\BookStore\WebApi\bin\Debug\net5.0\System.Diagn
 C:\Users\90531\Desktop\DotNetCore\BookStore\webapi\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\90531\Desktop\DotNetCore\BookStore\webapi\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\90531\Desktop\DotNetCore\BookStore\webapi\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\90531\Desktop\DotNetCore\BookStore\webapi\bin\Debug\net5.0\Newtonsoft.Json.dll
