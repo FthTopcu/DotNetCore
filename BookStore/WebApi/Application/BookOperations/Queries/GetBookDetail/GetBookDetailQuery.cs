@@ -1,10 +1,11 @@
 using System;
 using System.Linq;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using WebApi.Common;
 using WebApi.DBOperations;
 
-namespace WebApi.BookOperations.GetBookDetail
+namespace WebApi.Application.BookOperations.Queries.GetBookDetail
 {
         public class GetBookDetailQuery
         {
@@ -18,7 +19,7 @@ namespace WebApi.BookOperations.GetBookDetail
                 }
                 public BookDetailViewModel Handle()
                 {
-                        var Book = _dbContext.Books.Where(book => book.Id == BookId).SingleOrDefault();
+                        var Book = _dbContext.Books.Include(x => x.Genre).Where(book => book.Id == BookId).SingleOrDefault();
                         if (Book is null)
                                 throw new InvalidOperationException("Kitap Mevcut Değil");
                         BookDetailViewModel vm = _mapper.Map<BookDetailViewModel>(Book);
