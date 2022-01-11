@@ -19,7 +19,7 @@ namespace WebApi.Application.BookOperations.Queries.GetBookDetail
                 }
                 public BookDetailViewModel Handle()
                 {
-                        var Book = _dbContext.Books.Include(x => x.Genre).Where(book => book.Id == BookId).SingleOrDefault();
+                        var Book = _dbContext.Books.Include(x => x.Genre).Include(y => y.Author).Where(book => book.Id == BookId).SingleOrDefault();
                         if (Book is null)
                                 throw new InvalidOperationException("Kitap Mevcut Değil");
                         BookDetailViewModel vm = _mapper.Map<BookDetailViewModel>(Book);
@@ -29,6 +29,7 @@ namespace WebApi.Application.BookOperations.Queries.GetBookDetail
         public class BookDetailViewModel
         {
                 public string Title { get; set; }
+                public string Author{get;set;}
                 public string Genre { get; set; }
                 public int PageCount { get; set; }
                 public string PublishDate { get; set; }
