@@ -13,6 +13,9 @@ using WebApi.Application.AuthorOperations.Queries.GetAuthors;
 using WebApi.Application.AuthorOperations.Queries.GetAuthorDetail;
 using static WebApi.Application.AuthorOperations.Commands.CreateAuthor.CreateAuthorCommand;
 using WebApi.Application.AuthorOperations.Commands.CreateAuthor;
+using WebApi.Application.AuthorOperations.Commands.DeleteAuthor;
+using static WebApi.Application.AuthorOperations.Commands.UpdateAuthor.UpdateAuthorCommand;
+using WebApi.Application.AuthorOperations.Commands.UpdateAuthor;
 
 namespace WebApi.Controllers
 {
@@ -68,31 +71,31 @@ namespace WebApi.Controllers
                 return Ok();
         }
 
-        // //Put
-        // [HttpPut("{id}")]
-        // public IActionResult UpdateBook(int id, [FromBody] UpdateBookModel updatedBook)
-        // {
-        //         UpdateBookCommand command = new UpdateBookCommand(_context);
-        //         command.BookId = id;
-        //         command.Model = updatedBook;
+        //Put
+        [HttpPut("{id}")]
+        public IActionResult UpdateAuthor(int id, [FromBody] UpdateAuthorModel updatedAuthor)
+        {
+                UpdateAuthorCommand command = new UpdateAuthorCommand(_context);
+                command.AuthorId = id;
+                command.Model = updatedAuthor;
 
-        //         UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
-        //         validator.ValidateAndThrow(command);
-        //         command.Handle();
+                UpdateAuthorCommandValidator validator = new UpdateAuthorCommandValidator();
+                validator.ValidateAndThrow(command);
+                command.Handle();
 
-        //         return Ok();
-        // }
+                return Ok();
+        }
 
-        // [HttpDelete("{id}")]
-        // public IActionResult DeleteBook(int id)
-        // {
-        //         DeleteBookCommand command = new DeleteBookCommand(_context);
-        //         command.BookId = id;
-        //         DeleteBookCommandValidator validator = new DeleteBookCommandValidator();
-        //         validator.ValidateAndThrow(command);
-        //         command.Handle();
+        [HttpDelete("{id}")]
+        public IActionResult DeleteAuthor(int id)
+        {
+                DeleteAuthorCommand command = new DeleteAuthorCommand(_context);
+                command.AuthorId = id;
+                DeleteAuthorCommandValidator validator = new DeleteAuthorCommandValidator();
+                validator.ValidateAndThrow(command);
+                command.Handle();
 
-        //         return Ok();
-        // }
+                return Ok();
+        }
     }
 }

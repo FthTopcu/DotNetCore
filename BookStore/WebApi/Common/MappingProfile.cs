@@ -18,7 +18,7 @@ namespace WebApi.Common
                         CreateMap<CreateBookModel, Book>();
                         CreateMap<Book, BookDetailViewModel>().ForMember(destination => destination.Genre, opt => opt.MapFrom(src => src.Genre.Name)).ForMember(yazar => yazar.Author, opt => opt.MapFrom(src => src.Author.Name+" "+src.Author.Surname));
                         CreateMap<Book, BooksViewModel>().ForMember(destination => destination.Genre, opt => opt.MapFrom(src => src.Genre.Name)).ForMember(yazar => yazar.Author, opt => opt.MapFrom(src => src.Author.Name+" "+src.Author.Surname));
-                        // (yazar => yazar.Author, opt => opt.MapFrom(src => src.Author.Name));
+                        
                         CreateMap<Genre,GenresViewModel>();
                         CreateMap<Genre,GenreDetailViewModel>();
                         CreateMap<CreateAuthorModel,Author>();
