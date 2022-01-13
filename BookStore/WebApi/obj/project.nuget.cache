@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gR7cEdakYF70V8UJRdljN9nRMhjkzehjJb9DHQvFh2UVIgx1y8ydIEb/Qx34+rfqFAQOfgyUVSL8YckoUx+fHg==",
+  "dgSpecHash": "Y4YRynoWMAT6g+2fzkDspe5IouLAkJWnd1X7ZbE09DW7ohoMu1uqtzqrkMoXwkcK9Vpwh7dRjztz2apWg5kA3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\webapi\\WebApi.csproj",
+  "projectFilePath": "c:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\90531\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\90531\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

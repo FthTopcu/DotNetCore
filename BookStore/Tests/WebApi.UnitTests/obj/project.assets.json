@@ -7263,6 +7263,8 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "FluentAssertions >= 6.3.0",
+      "Microsoft.EntityFrameworkCore >= 5.0.6",
+      "Microsoft.EntityFrameworkCore.InMemory >= 5.0.6",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "Moq >= 4.16.1",
       "WebApi >= 1.0.0",
@@ -7279,11 +7281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\Tests\\WebApi.UnitTests\\webapi.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\Tests\\WebApi.UnitTests\\webapi.UnitTests.csproj",
       "projectName": "webapi.UnitTests",
-      "projectPath": "c:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\Tests\\WebApi.UnitTests\\webapi.UnitTests.csproj",
+      "projectPath": "C:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\Tests\\WebApi.UnitTests\\webapi.UnitTests.csproj",
       "packagesPath": "C:\\Users\\90531\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\Tests\\WebApi.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -7306,8 +7308,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\WebApi\\WebApi.csproj": {
-              "projectPath": "c:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\WebApi\\WebApi.csproj"
+            "C:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\WebApi\\WebApi.csproj": {
+              "projectPath": "C:\\Users\\90531\\Desktop\\DotNetCore\\BookStore\\WebApi\\WebApi.csproj"
             }
           }
         }
@@ -7325,6 +7327,14 @@
           "FluentAssertions": {
             "target": "Package",
             "version": "[6.3.0, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[5.0.6, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[5.0.6, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
